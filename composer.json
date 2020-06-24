@@ -1,0 +1,21 @@
+{
+    "name": "aelnemr/api-response",
+    "description": "This package will handle restful api response",
+    "type": "libary",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmed Elnemr Ahmed",
+            "email": "pro.ahmedelnemr@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AElnemr\\RestFullResponse\\" : "src/"
+        }
+    }
+}
