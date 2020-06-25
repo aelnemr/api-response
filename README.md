@@ -19,7 +19,7 @@ All that you need is to `use` the `CoreJsonResponse` trait inside your controlle
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use AElnemr\RestFullResponse\CoreJsonResponse;
+use AElnemr\RestfulResponse\CoreJsonResponse;
 
 class CountryController extends Controller
 {

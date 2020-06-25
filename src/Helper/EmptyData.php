@@ -4,7 +4,7 @@
  * Date: 6/25/2020
  */
 
-namespace AElnemr\RestFullResponse\Helper;
+namespace AElnemr\RestfulResponse\Helper;
 
 
 class EmptyData
