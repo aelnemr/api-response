@@ -29,25 +29,26 @@ class CountryController extends Controller
 
 ## Available methods
 
-### Success Methods
+### Success Methods :v:
 | Method | Status code | Description |
 |---|---|---|
 |ok|200|Successful get, patch (return a JSON object)|
 |created|201|Successful post (return a JSON object)|
 
-### Error Status
+### Error Status :shit:
 
 | Method | Status code | Description |
 |---|---|---|
-|unauthorized|401|Not authenticated|
-|forbidden|403|Authenticated, but no permissions|
-|notFound|404|Not Found|
-|invalidRequest|422|Validation|
+|unauthorized|401|Error Not authenticated|
+|forbidden|403|Error Authenticated, but no permissions|
+|notFound|404|Error Not Found|
+|invalidRequest|422|Error Validation|
 
-### Extra methods
+### Extra methods :man:
 
 | Method | Status code | Description |
 |---|---|---|
 |accepted|202|Successful post, delete, path - async|
-|badRequest|400|The request could not be understood by the server due to malformed syntax|
-|paymentRequired|402|Payment required|
+|badRequest|400|Error The request could not be understood by the server due to malformed syntax|
+|paymentRequired|402|Error Payment required|
+|conflict|409|Error Logical error|
