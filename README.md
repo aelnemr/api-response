@@ -45,8 +45,8 @@ class CountryController extends Controller
 
 | Method | Status code | Description |
 |---|---|---|
-|unauthorized|401|Error Not authenticated|
-|forbidden|403|Error Authenticated, but no permissions|
+|unauthenticated|401|Error Not authenticated|
+|forbidden|403|Error Not authorized (Authenticated, but no permissions)|
 |notFound|404|Error Not Found|
 |invalidRequest|422|Error Validation|
 
