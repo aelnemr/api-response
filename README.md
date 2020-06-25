@@ -3,6 +3,12 @@ CoreJsonResponse JSON response trait.
 This trait makes it easy for any controller to return a JSON response 
 with the appropriate HTTP status code.
 
+# Install via composer :fire:
+
+```$xslt
+composer require aelnemr/api-response
+```
+
 # Usage
 All that you need is to `use` the `CoreJsonResponse` trait inside your controller.
 
