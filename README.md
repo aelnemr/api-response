@@ -39,6 +39,7 @@ class CountryController extends Controller
 | Method | Status code | Description |
 |---|---|---|
 |ok|200|Successful get, patch (return a JSON object)|
+|okWithPagination|200|Successful get, patch (return a JSON object)|
 |created|201|Successful post (return a JSON object)|
 
 ### Error Status :shit:
