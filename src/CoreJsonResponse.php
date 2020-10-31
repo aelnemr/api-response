@@ -7,6 +7,7 @@
 namespace AElnemr\RestfulResponse;
 
 use AElnemr\RestfulResponse\Helper\EmptyData;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 trait CoreJsonResponse
@@ -28,6 +29,22 @@ trait CoreJsonResponse
             $meta,
             $errors
         ), 200);
+    }
+
+    /**
+     * The request has succeeded.
+     *
+     * @param AnonymousResourceCollection $collection
+     * @param string|null $message
+     * @return JsonResponse
+     */
+    protected function okWithPagination(AnonymousResourceCollection $collection, ?string $message = null): JsonResponse
+    {
+        $collection = json_decode($collection->toResponse(app('request'))->getContent(), true);
+        if ($collection) {
+            return $this->ok($collection['data'], $collection['meta'], $message);
+        }
+        return $this->ok(null, null, trans('api.empty_data'));
     }
 
     /**
