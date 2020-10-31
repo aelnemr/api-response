@@ -44,6 +44,9 @@ trait CoreJsonResponse
     {
         $collection = json_decode($collection->toResponse(app('request'))->getContent(), true);
         if ($collection) {
+            if (!empty($collection['meta']) && isset($collection['meta']['links'])) {
+                unset($collection['meta']['links']);
+            }
             return $this->ok($collection['data'], $collection['meta'], $message);
         }
         return $this->ok(null, null, trans('api.empty_data'));
