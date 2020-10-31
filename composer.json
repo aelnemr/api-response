@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AElnemr\\RestfulResponse\\" : "src/"
+            "AElnemr\\RestFulResponse\\" : "src/"
         }
     }
 }
