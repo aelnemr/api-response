@@ -4,10 +4,12 @@
  * Date: 6/25/2020
  */
 
-namespace AElnemr\RestFulResponse;
+namespace AElnemr\RestFullResponse;
 
-use AElnemr\RestfulResponse\Helper\EmptyData;
+
+use AElnemr\RestFullResponse\Helper\EmptyData;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 trait CoreJsonResponse
