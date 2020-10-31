@@ -139,7 +139,7 @@ trait CoreJsonResponse
      * @param array|null $meta
      * @return JsonResponse
      */
-    protected function unauthenticated(?array $errors = null, ?string $message = null, ?array $data = null, ?array $meta = null): JsonResponse
+    protected function unauthorized(?array $errors = null, ?string $message = null, ?array $data = null, ?array $meta = null): JsonResponse
     {
         return response()->json($this->body(
             $data,
